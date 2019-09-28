@@ -1,32 +1,36 @@
 import React, { Component } from 'react';
 import './App.css';
 import characters from "./characters.json";
-import Characters from "./component/characters.js";
+import Characters from "./component/Character";
+import Navbar from "./component/Navbar";
 
 
 class App extends Component {
   state = {
     characters
+
   };
 
 
 render(){
   return (
-     <div>
-       {this.state.characters.map((character, index) => (
+    <div class="wrapper">
+    <Navbar/>
+
+     <div className="picture-list-container">
+       {this.state.characters.map(character => (
          <Characters
-         key={index}
+         key={character.id}
          id={character.id}
-        image={character.name}
-        name={character.image}
+        image={character.image}
+        name={character.name}
         />
-       )
-        
-  )}
+       )      
+       )}
+     </div>
      </div>
   );
   }
-
 }
 
 export default App

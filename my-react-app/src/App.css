@@ -20,3 +20,9 @@
 .App-link {
   color: #09d3ac;
 }
+
+.picture-list-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}

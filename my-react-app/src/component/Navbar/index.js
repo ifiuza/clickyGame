@@ -7,7 +7,7 @@ function Navbar(props) {
             <ul>
                 <li>Clicky Game</li>
                 <li class>Click an Image To Make Points</li>
-                <li>Score: </li>
+                <li>Score:{props.counter}</li>
             </ul>
             <h2>By Isaac Fiuza</h2>
         </nav>

@@ -1,7 +1,7 @@
 # clickyGame
 
 ClickAndMemorize
-Objective:
+Objective :
 
 Game where user clicks images
 Score is added as new image is clicked
